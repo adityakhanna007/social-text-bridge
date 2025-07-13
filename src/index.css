@@ -9,32 +9,57 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* WhatsApp Green Theme */
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-dark: 142 70% 35%;
+    --primary-light: 142 70% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 14% 94%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 14% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 40% 90%;
+    --accent-foreground: 0 0% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 70% 45%;
+
+    /* WhatsApp specific colors */
+    --whatsapp-green: 142 70% 45%;
+    --whatsapp-green-dark: 142 70% 35%;
+    --whatsapp-green-light: 142 30% 93%;
+    --whatsapp-bg: 220 14% 96%;
+    --chat-bg: 210 11% 93%;
+    --message-sent: 142 70% 45%;
+    --message-received: 0 0% 100%;
+    --online-status: 120 100% 35%;
+
+    /* Gradients */
+    --gradient-whatsapp: linear-gradient(135deg, hsl(var(--whatsapp-green)), hsl(var(--whatsapp-green-dark)));
+    --gradient-chat: linear-gradient(180deg, hsl(var(--whatsapp-bg)), hsl(var(--chat-bg)));
+
+    /* Shadows */
+    --shadow-message: 0 1px 3px hsl(0 0% 0% / 0.1);
+    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.05);
+    --shadow-green: 0 4px 12px hsl(var(--whatsapp-green) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
